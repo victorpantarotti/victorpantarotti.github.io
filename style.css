@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@200&display=swap');
+
+* {
+  border: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #212121;
+  color: white;
+  font-family: 'Sora';
+}
+
+content { animation: fadeIn 1s linear forwards; }
+
+/* Top */
+
+#top {
+  height: 106vh;
+  
+  background-image: url("./assets/Topography-Background.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  /* Divider Start */
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 50px));
+}
+
+#top div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+  width: 100%;
+  height: 100%;
+  background-color: rgba(33, 33, 33, 0.75);
+}
+
+#top #topTXT {
+  position: absolute;
+  top: 0;
+  margin-top: 15px;
+  font-size: 18px;
+}
+
+#top #centerTXT {
+  font-size: 60px;
+}
+
+/* Center */
+
+#center {  
+  padding-top: 90px;
+  padding-bottom: 90px;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  font-size: 20px;
+
+  /* Divider End */
+  clip-path: polygon(0 0, 100% 50px, 100% 100%, 0 100%);
+  margin-top: -50px;
+
+  /* Divider Start */
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 50px), 0 100%);
+}
+
+#center #title {
+  font-size: 24px;
+  text-align: center;
+}
+
+#center #anotherWebsite {
+  color: white;
+}
+
+#center iframe {
+  width: 420px;
+  height: 235px;
+  
+  margin-top: 10px;
+  border-radius: 15px;
+  box-shadow: 0px 0px 15px -3px rgba(255, 255, 255, 0.4);
+}
+
+@media screen and (max-width: 460px) {
+  #center iframe {
+    width: 260px;
+    height: 165px;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  #center iframe {
+    width: 210px;
+    height: 115px;
+  }
+}
+
+/* Bottom */
+
+#bottom {
+  background-image: url("./assets/VHS-Glitch.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  /* Divider End */
+  clip-path: polygon(0 50px, 100% 0, 100% 100%, 0 100%);
+  margin-top: -50px;
+}
+
+#bottom div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  padding-top: 90px;
+  padding-bottom: 25px;
+
+  width: 100%;
+  height: 100%;
+  background-color: rgba(33, 33, 33, 0.75);
+}
+
+#bottom h1 {
+  font-size: 36px;
+}
+
+#bottom h3 {
+  font-size: 18px;
+}
+
+#bottom a {
+  text-decoration: none;
+  background-color: #333;
+  color: white;
+  padding: 15px;
+  border-radius: 15px;
+
+  font-size: 18px;
+
+  transition: all ease .3s;
+}
+
+#bottom a:hover {
+  background-color: #474242;
+}
+
+/* Scroll */
+
+::-webkit-scrollbar {
+  width: 7px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #090E19;
+  /* border-radius: 1.5px; */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #C20B0B;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #C20B0B;
+}
+
+/* Animations */
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
