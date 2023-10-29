@@ -5,6 +5,10 @@ document.onreadystatechange = function () {
     document.querySelector("content").style.visibility = "visible";
     document.querySelector("loader").classList.add("loaderOut");
     document.querySelector("body").style.overflow = "visible";
+
+    setTimeout(() => {
+      document.querySelector("loader").remove();
+    }, 1000);
   } 
 }
 
