@@ -1,5 +1,7 @@
 # victorpantarotti's website
 
+[meu novo site!](https://github.com/victorpantarotti/Personal-Website)
+
 **um site simples pra ficar no domínio [victorpantarotti.com.br](https://victorpantarotti.com.br/)  
 feito com html, css e js na repl.it em uma tarde**
 
